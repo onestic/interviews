@@ -14,7 +14,7 @@ Desde nuestro punto de vista no existen pruebas bien hechas o pruebas mal hechas
 
 Vamos a valorar que la solución planteada esté bien documentada y que seamos capaces de ejecutar tu solución “sin pensar”.
 
-Vamos a valorar mucho cómo has llegado a la solución que nos propones. Documenta el proceso que has seguido y las urls de las páginas o libros que has utilizado.
+Vamos a valorar **mucho** cómo has llegado a la solución que nos propones. Documenta el proceso que has seguido y las urls de las páginas o libros que has utilizado.
 
 No establecemos qué lenguaje, herramienta o framework tienes que utilizar, elige el camino que prefieras y dinos por qué lo has elegido. En nuestro día a día, los lenguajes que usamos son Python, PHP y JS, para nosotros es más sencillo validar tu prueba en alguno de estos lenguajes.
 
