@@ -42,4 +42,5 @@ Entrega:
 
 ## Ejemplo de Datos Básicos del Catálogo
 
-[Adjuntar documento]
+[product-data.csv](https://drive.google.com/file/d/1Mdpv7IXbvJgdr1qpu3ZwjN7tSiAK_9cE/view?usp=sharing)
+[product-images.csv](https://drive.google.com/file/d/1a86mFGQs2qfFv7yXwxc8SvYxFBf0wabG/view?usp=sharing)
