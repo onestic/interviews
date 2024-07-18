@@ -42,3 +42,6 @@ Entrega:
 
 ## Ejemplo de Datos Básicos del Catálogo
 
+[product-data](/ia_operator/resources/product-data.csv)
+
+[product-images](/ia_operator/resources/product-images.csv)
