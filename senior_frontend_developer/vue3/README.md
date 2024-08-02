@@ -1,132 +1,99 @@
-# Technical Test for Nuxt 3 Developer
+# Challenge Nuxt 3 Frontend Developer
 
-**Objective**: Evaluate technical and analytical skills in frontend development with Nuxt 3 and associated technologies.
+**Objective**: Evaluate the technical skills of a frontend developer by building a Nuxt 3 application from scratch with specific features.
 
-**Duration**: 3-4 hours
+Duration: 4-6 hours
 
-## 📋 STEP 1: Implement a Simple Web Application
+## ℹ️ Context
 
-### Description:
-In this step, we want to see your basic skills in Nuxt 3. The task is to develop a web application that allows users to manage a list of tasks. Users should be able to view, add, edit, and delete tasks.
+You've just started to work with Company Inc., an Italian restaurant franchise that wants to have a presence on the Internet and bring some customers to their large network of restaurants by creating a viral marketing campaign.
 
-### Technical Requirements:
+They want you to build a Server-Side Rendering (SSR) Single Page Application using Nuxt 3. The main feature of the campaign is a Pasta Carbonara meal calculator. They have a "secret" formula with all the required ingredients, and users should be able to introduce the quantity they own. Then, it will give the number of meals they can cook at home. Once the calculator gives the number of meals, the site will navigate to a new page with the "secret" formula exposed, and the exact quantities of each ingredient to use.
 
-* Use Nuxt 3, Vue Router, and Vuex/Pinia.
-* Implement Server-Side Rendering (SSR).
-* Create reusable components for forms and task lists.
+The boss also wants to include a Quote of the Day on every Store shown in the list of the Our Stores section. The API for the Quote is available at: https://api-ninjas.com/api/quotes. Note that the API has a usage limit, so you should implement an efficient solution if the site reaches too many visits.
 
-### Mockup Reference:
+## 📋 STEP 1: Setup and Basic Structure
 
-```plaintext
-----------------------------------------------
-|           My Tasks                         |
-----------------------------------------------
-| 1. Buy groceries           [Edit] [Delete] |
-| 2. Prepare presentation    [Edit] [Delete] |
-| 3. Call Maria              [Edit] [Delete] |
-----------------------------------------------
-| [+] Add new task                           |
-----------------------------------------------
+- Initialize a Nuxt 3 project.
+- Set up the basic structure with components, pages, and styles.
+
+## 🍽️ STEP 2: Meal Calculator
+
+- Create a form where the user can input the quantities of ingredients they have.
+- Calculate the number of meals based on the "secret" formula provided.
+- Redirect the user to a new page showing the number of meals and the exact quantities of each ingredient to use.
+
+```js
+const secretIngredients = {
+  pasta: 500,
+  bacon: 200,
+  eggs: 1,
+  milk: 200,
+  butter: 500,
+  oil: 100
+};
 ```
 
-```plaintext
------------------------------------
-|       Add/Edit Task             |
------------------------------------
-| Task Name: [__________]         |
-|                                 |
-| [Save] [Cancel]                 |
------------------------------------
-```
+## 🏬 STEP 3: Stores List and Joke of the Day
 
-## 🎨 STEP 2: Styling and Design
+- Create a page to list the stores using the file `stores.json`
+- Fetch and display the Quote of the Day from the API on the stores page and the result page.
+- Add a search input to filter the stores by name.
+- Make the stores list responsive, displaying 4 columns on desktop and 1 column on mobile.
 
-### Description:
+## 🎨 STEP 4: Styling and Design
 
 Here we would like to see your artistic touch and design skills. Make sure the application is pleasant to look at and easy to use.
 
-### Technical Requirements:
+- Apply styles to the application using SCSS and BEM.
+- Implement a design structure using Flexbox or CSS Grid.
+- Ensure the application is responsive and looks good on both mobile and desktop devices.
 
-* Apply styles to the application using SCSS and BEM.
-* Implement a design structure using Flexbox or CSS Grid.
-* Ensure the application is responsive and looks good on both mobile and desktop devices.
-
-## 🚀 STEP 3: Optimization and Performance
-
-### Description:
+## 🚀 STEP 5: Optimization and Performance
 
 In this step, we are interested in seeing how you handle the performance of the application. We want the application to run quickly and efficiently.
 
-### Technical Requirements:
+- Implement caching for the Quote of the Day API to avoid hitting the usage limit.
+- Implement techniques to improve the application's performance, such as lazy loading for components and image optimization.
+- Document the optimization techniques used.
 
-* Implement techniques to improve the application's performance, such as lazy loading for components and image optimization.
-* Document the optimization techniques used.
+## 🧪 STEP 6: Quality Assurance
 
-## 🧪 STEP 4: Testing
+- Ensure cross-browser compatibility (except Internet Explorer) and responsiveness on the most used devices.
+- Write unit tests for key components using Jest or Vitest.
 
-### Description:
-
-Let's test your code! Here, we want to see how you ensure the quality of your code through unit and integration tests.
-
-### Technical Requirements:
-
-* Write unit tests for at least two components using Jest or Vitest
-
-### 🌟 Extra:
-
-* Perform an end-to-end test for the user flow (add and delete a task) using Cypress.
-
-## 📚 STEP 5: Documentation
-
-### Description:
+## 📚 STEP 7: Documentation
 
 Finally, we want to see your skills in documenting your work. Documentation is key to any successful project.
-
-### Technical Requirements:
 
 * Provide brief documentation on how to set up and run the application.
 * Include a section describing the technical and design decisions made during development.
 
-## 🌟 Extra Ball: User Authentication
+## 🌟 Optional Extras
 
-### Description:
-
-For those who want to go the extra mile, implement a basic user authentication system (registration and login).
-
-### Technical Requirements:
-
-* Use a simulated API to handle authentication (you can use json-server or any similar tool).
-* Provide a JSON file with some predefined users.
-
-
-### Mockup Reference:
-
-```plaintext
------------------------------------
-|          Log In                 |
------------------------------------
-| Username:     [__________]      |
-| Password:     [__________]      |
-|                                 |
-| [Log In]                        |
-|                                 |
-| [Register]                      |
------------------------------------
-```
-
-```plaintext
------------------------------------
-|           Register              |
------------------------------------
-| Username:     [__________]      |
-| Email:        [__________]      |
-| Password:     [__________]      |
-|                                 |
-| [Register]                      |
------------------------------------
-```
+- End-to-End Test: Add an end-to-end test for the main user flow (meal calculation and store search) using Cypress.
+- Light and Dark Mode: Implement Light and Dark mode toggle and persist the user’s preference.
 
 ## 📦 Deliverables:
 
 * Submit the code in a Git repository (e.g., GitHub) with clear instructions on how to set it up and run it.
 * Provide a `README` file explaining how to run the tests and any other relevant details.
+
+## 📄 Tasks structure
+
+### Critical Tasks:
+
+- Setup and Basic Structure
+- Meal Calculator
+- Stores List and Quote of the Day
+
+### Secondary Tasks:
+
+- Styling and Design
+- Optimization and Performance
+- Quality assurance
+
+### Optional Tasks:
+
+- End-to-End Testing
+- Light and Dark Mode
